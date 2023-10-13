@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\obj\Debug\net6.0\bb103_weapon_tasks.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\obj\Debug\net6.0\bb103_weapon_tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\obj\Debug\net6.0\bb103_weapon_tasks.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\obj\Debug\net6.0\bb103_weapon_tasks.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\obj\Debug\net6.0\bb103_weapon_tasks.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\bin\Debug\net6.0\bb103_weapon_tasks.exe
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\bin\Debug\net6.0\bb103_weapon_tasks.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\bin\Debug\net6.0\bb103_weapon_tasks.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\bin\Debug\net6.0\bb103_weapon_tasks.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\bin\Debug\net6.0\bb103_weapon_tasks.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\obj\Debug\net6.0\bb103_weapon_tasks.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\obj\Debug\net6.0\refint\bb103_weapon_tasks.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\obj\Debug\net6.0\bb103_weapon_tasks.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\obj\Debug\net6.0\bb103_weapon_tasks.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_weapon_tasks\bb103_weapon_tasks\obj\Debug\net6.0\ref\bb103_weapon_tasks.dll
