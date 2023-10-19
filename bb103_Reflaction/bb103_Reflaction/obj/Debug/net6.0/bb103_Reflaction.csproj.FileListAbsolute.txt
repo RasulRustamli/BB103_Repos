@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\bin\Debug\net6.0\bb103_Reflaction.exe
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\bin\Debug\net6.0\bb103_Reflaction.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\bin\Debug\net6.0\bb103_Reflaction.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\bin\Debug\net6.0\bb103_Reflaction.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\bin\Debug\net6.0\bb103_Reflaction.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\obj\Debug\net6.0\bb103_Reflaction.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\obj\Debug\net6.0\bb103_Reflaction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\obj\Debug\net6.0\bb103_Reflaction.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\obj\Debug\net6.0\bb103_Reflaction.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\obj\Debug\net6.0\bb103_Reflaction.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\obj\Debug\net6.0\bb103_Reflaction.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\obj\Debug\net6.0\refint\bb103_Reflaction.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\obj\Debug\net6.0\bb103_Reflaction.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\obj\Debug\net6.0\bb103_Reflaction.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Reflaction\bb103_Reflaction\obj\Debug\net6.0\ref\bb103_Reflaction.dll

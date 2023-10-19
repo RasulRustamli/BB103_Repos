@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\bin\Debug\net6.0\bb103_Exception.exe
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\bin\Debug\net6.0\bb103_Exception.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\bin\Debug\net6.0\bb103_Exception.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\bin\Debug\net6.0\bb103_Exception.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\bin\Debug\net6.0\bb103_Exception.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\obj\Debug\net6.0\bb103_Exception.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\obj\Debug\net6.0\bb103_Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\obj\Debug\net6.0\bb103_Exception.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\obj\Debug\net6.0\bb103_Exception.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\obj\Debug\net6.0\bb103_Exception.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\obj\Debug\net6.0\bb103_Exception.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\obj\Debug\net6.0\refint\bb103_Exception.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\obj\Debug\net6.0\bb103_Exception.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\obj\Debug\net6.0\bb103_Exception.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_Exception\bb103_Exception\obj\Debug\net6.0\ref\bb103_Exception.dll
