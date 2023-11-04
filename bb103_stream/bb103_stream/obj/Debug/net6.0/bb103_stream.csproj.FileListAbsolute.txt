@@ -1,0 +1,17 @@
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\bin\Debug\net6.0\bb103_stream.exe
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\bin\Debug\net6.0\bb103_stream.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\bin\Debug\net6.0\bb103_stream.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\bin\Debug\net6.0\bb103_stream.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\bin\Debug\net6.0\bb103_stream.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\obj\Debug\net6.0\bb103_stream.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\obj\Debug\net6.0\bb103_stream.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\obj\Debug\net6.0\bb103_stream.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\obj\Debug\net6.0\bb103_stream.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\obj\Debug\net6.0\bb103_stream.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\obj\Debug\net6.0\bb103_stream.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\obj\Debug\net6.0\refint\bb103_stream.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\obj\Debug\net6.0\bb103_stream.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\obj\Debug\net6.0\bb103_stream.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\obj\Debug\net6.0\ref\bb103_stream.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_stream\bb103_stream\obj\Debug\net6.0\bb103_stream.csproj.CopyComplete

@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\bin\Debug\net6.0\bb103_enums.exe
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\bin\Debug\net6.0\bb103_enums.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\bin\Debug\net6.0\bb103_enums.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\bin\Debug\net6.0\bb103_enums.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\bin\Debug\net6.0\bb103_enums.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\obj\Debug\net6.0\bb103_enums.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\obj\Debug\net6.0\bb103_enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\obj\Debug\net6.0\bb103_enums.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\obj\Debug\net6.0\bb103_enums.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\obj\Debug\net6.0\bb103_enums.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\obj\Debug\net6.0\bb103_enums.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\obj\Debug\net6.0\refint\bb103_enums.dll
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\obj\Debug\net6.0\bb103_enums.pdb
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\obj\Debug\net6.0\bb103_enums.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\bb103_enums\bb103_enums\obj\Debug\net6.0\ref\bb103_enums.dll

@@ -1,0 +1,15 @@
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\bin\Debug\net6.0\BB103_Thread.exe
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\bin\Debug\net6.0\BB103_Thread.deps.json
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\bin\Debug\net6.0\BB103_Thread.runtimeconfig.json
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\bin\Debug\net6.0\BB103_Thread.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\bin\Debug\net6.0\BB103_Thread.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\obj\Debug\net6.0\BB103_Thread.csproj.AssemblyReference.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\obj\Debug\net6.0\BB103_Thread.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\obj\Debug\net6.0\BB103_Thread.AssemblyInfoInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\obj\Debug\net6.0\BB103_Thread.AssemblyInfo.cs
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\obj\Debug\net6.0\BB103_Thread.csproj.CoreCompileInputs.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\obj\Debug\net6.0\BB103_Thread.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\obj\Debug\net6.0\refint\BB103_Thread.dll
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\obj\Debug\net6.0\BB103_Thread.pdb
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\obj\Debug\net6.0\BB103_Thread.genruntimeconfig.cache
+C:\Users\rasul\OneDrive\Masaüstü\BB103_Thread\BB103_Thread\obj\Debug\net6.0\ref\BB103_Thread.dll
