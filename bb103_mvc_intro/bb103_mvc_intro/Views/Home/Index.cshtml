@@ -1,0 +1,25 @@
+﻿@using bb103_mvc_intro.Models
+
+
+
+<ul>
+   @* @foreach (var item in ViewBag.StudentList)
+    {
+        <li>@item.Name</li>
+    }
+*@
+
+@*@foreach (var item in ViewData["StudentList"] as List<Student>)
+{
+    <li>@item.Name</li>
+}*@
+@foreach (var item in TempData["StudentList"] as List<Student>)
+{
+    <li>@item.Name</li>
+}
+
+</ul>
+<h2>Index is here</h2>
+
+
+
