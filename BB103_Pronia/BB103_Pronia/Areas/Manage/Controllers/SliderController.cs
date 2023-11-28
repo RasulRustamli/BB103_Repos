@@ -28,17 +28,17 @@ namespace BB103_Pronia.Areas.Manage.Controllers
         [HttpPost]
         public IActionResult Create(Slider slider)
         {
-            if(slider == null)
+            if (slider == null)
             {
                 return BadRequest();
             }
-            if(slider.ImageFile.ContentType!= "image/jpeg"&&slider.ImageFile.ContentType!= "image/png")
-            {
+            if (!slider.ImageFile.CheckContent("image/"))
+            { 
                 ModelState.AddModelError("ImageFile", "Duzgun format daxil edin");
 
                 return View();
             }
-            if(slider.ImageFile.Length> 2097152)
+            if(!slider.ImageFile.CheckLenght(20000))
             {
                 ModelState.AddModelError("ImageFile", "Maksimum 2mb olcude sekil yukleye bilersiz");
                 return View();
@@ -84,5 +84,6 @@ namespace BB103_Pronia.Areas.Manage.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+       
     }
 }
