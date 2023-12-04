@@ -43,11 +43,11 @@ namespace BB103_Pronia.Areas.Manage.Controllers
                 ModelState.AddModelError("CategoryId", "Bele bir category movcud deyil");
                 return View();
             }
-
+            Random rnd = new Random(3);
             Product product = new Product()
             {
                 Name = createProduct.Name,
-                SKU = createProduct.SKU,
+                SKU=createProduct.Name.Substring(0,2).ToUpper()+"-"+rnd.Next(100,999),
                 Description = createProduct.Description,
                 Price = createProduct.Price,
                 CategoryId = createProduct.CategoryId,
@@ -108,49 +108,30 @@ namespace BB103_Pronia.Areas.Manage.Controllers
             product.ProductImages.Add(mainImage);
             product.ProductImages.Add(hoverImage);
             TempData["Error"] = "";
-            foreach (IFormFile imgFile in createProduct.Photos)
+            if(createProduct.Photos!=null)
             {
-                if (!imgFile.CheckContent("image/"))
+                foreach (IFormFile imgFile in createProduct.Photos)
                 {
-                    TempData["Error"] += $"{imgFile.FileName} uygun tipde deyil ";
-                    continue;
-                }
-                if (!imgFile.CheckLenght(2097152))
-                {
-                    TempData["Error"] += $"{imgFile.FileName} file-nin olcusu coxdur";
-                    continue;
-                }
-                ProductImage productImage = new ProductImage()
-                {
-                    IsPrime = null,
-                    Product = product,
-                    ImgUrl = imgFile.UploadFile(_env.WebRootPath, "/Upload/Product/")
-                };
-                product.ProductImages.Add(productImage);
+                    if (!imgFile.CheckContent("image/"))
+                    {
+                        TempData["Error"] += $"{imgFile.FileName} uygun tipde deyil ";
+                        continue;
+                    }
+                    if (!imgFile.CheckLenght(2097152))
+                    {
+                        TempData["Error"] += $"{imgFile.FileName} file-nin olcusu coxdur";
+                        continue;
+                    }
+                    ProductImage productImage = new ProductImage()
+                    {
+                        IsPrime = null,
+                        Product = product,
+                        ImgUrl = imgFile.UploadFile(_env.WebRootPath, "/Upload/Product/")
+                    };
+                    product.ProductImages.Add(productImage);
 
+                }
             }
-
-           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             await _context.Products.AddAsync(product);
             await _context.SaveChangesAsync();  
 
@@ -204,6 +185,7 @@ namespace BB103_Pronia.Areas.Manage.Controllers
         {
             ViewBag.Categories = await _context.Categories.ToListAsync();
             ViewBag.Tags = await _context.Tags.ToListAsync();
+            
             if (updateProduct.Id == null || updateProduct.Id <= 0) return View("Error");
             Product exsistProduct = await _context.Products
                 .Include(p => p.Category)
@@ -212,16 +194,27 @@ namespace BB103_Pronia.Areas.Manage.Controllers
                 .Include(p=>p.ProductImages)
                 .Where(c => c.Id == updateProduct.Id).FirstOrDefaultAsync();
             if (exsistProduct == null) return View("Error");
-            if(!ModelState.IsValid)
+            updateProduct.ProductImagesVm = new List<ProductImageVm>();
+            foreach (var item in exsistProduct.ProductImages)
             {
-                return View();
+                ProductImageVm productImageVm = new ProductImageVm()
+                {
+                    Id = item.Id,
+                    ImgUrl = item.ImgUrl,
+                    IsPrime = item.IsPrime,
+                };
+                updateProduct.ProductImagesVm.Add(productImageVm);
+            }
+            if (!ModelState.IsValid)
+            {
+                return View(updateProduct);
             }
             TempData["Error"] = "";
             bool resultCategory = await _context.Categories.AnyAsync(c => c.Id == updateProduct.CategoryId);
             if (!resultCategory)
             {
                 ModelState.AddModelError("CategoryId", "Bele bir category movcud deyil");
-                return View();
+                return View(updateProduct);
             }
 
             foreach (var item in updateProduct.TagIds)
@@ -230,13 +223,13 @@ namespace BB103_Pronia.Areas.Manage.Controllers
                 if (!resultTag)
                 {
                     ModelState.AddModelError("TagIds", "Bele bir tag movcud deyil");
-                    return View();
+                    return View(updateProduct);
                 }
             }
-
+            Random rnd = new Random();
 
             List<int> newSelectTagId = updateProduct.TagIds.Where(tagId =>!exsistProduct.ProductTags.Exists(p => p.TagId == tagId)).ToList();
-            exsistProduct.SKU = updateProduct.SKU;
+            exsistProduct.SKU = updateProduct.Name.Substring(0, 2).ToUpper() + "-" + rnd.Next(100, 999);
             exsistProduct.Price = updateProduct.Price;
             exsistProduct.Description = updateProduct.Description;
             exsistProduct.Name = updateProduct.Name;
@@ -329,20 +322,12 @@ namespace BB103_Pronia.Areas.Manage.Controllers
                         ImgUrl = imgFile.UploadFile(_env.WebRootPath, "/Upload/Product/")
                     };
                     exsistProduct.ProductImages.Add(productImage);
-
                 }
             }
 
 
-
-
-
-
-
-
-
-
-            await _context.SaveChangesAsync();
+    
+        await _context.SaveChangesAsync();
            
 
             return RedirectToAction(nameof(Index));

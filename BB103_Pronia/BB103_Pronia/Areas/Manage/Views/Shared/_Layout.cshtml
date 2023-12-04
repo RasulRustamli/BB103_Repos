@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link"  asp-controller="Slider" asp-action="Index">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -73,7 +73,9 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Pages:</h6>
-                        <a class="collapse-item" href="Manage/Category/Index">Category</a>
+                        <a class="collapse-item" asp-controller="Slider" asp-action="Index">Slider</a>
+                        <a class="collapse-item" asp-controller="Product" asp-action="Index">Product</a>
+                        <a class="collapse-item" asp-controller="Category" asp-action="Index">Category</a>
                         
                     </div>
                 </div>

@@ -1,8 +1,8 @@
 ﻿namespace BB103_Pronia.Models
 {
-    public class ProductImage
+    public class ProductImage : BaseEntity
     {
-        public int Id { get; set; }
+       
         public bool? IsPrime { get; set; }
         public string  ImgUrl { get; set; }
         public int ProductId { get; set; }

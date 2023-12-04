@@ -12,6 +12,10 @@ public class HomeController :Controller
 
     public async Task<IActionResult> Index()
     {
+        //Response.Cookies.Append("Name", "Qemze");
+
+        //HttpContext.Session.SetString("Name", "Meryem");
+
         HomeVm homeVm = new HomeVm()
         {
             Sliders = await _context.Sliders.OrderByDescending(s=>s.Id).Take(5).ToListAsync(),
