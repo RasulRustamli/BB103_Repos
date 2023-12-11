@@ -19,7 +19,7 @@ public class HomeController :Controller
         HomeVm homeVm = new HomeVm()
         {
             Sliders = await _context.Sliders.OrderByDescending(s=>s.Id).Take(5).ToListAsync(),
-            Products = await _context.Products.Include(p=>p.ProductImages).ToListAsync(),
+            Products = await _context.Products.Where(p => p.IsDeleted == false).Include(p=>p.ProductImages).ToListAsync(),
         };
 
 

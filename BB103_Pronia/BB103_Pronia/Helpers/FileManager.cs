@@ -35,9 +35,14 @@ public static class FileManager
     public static void RemoveFile(this string filename,string rootEnv,string folder)
     {
         string path = rootEnv+folder+filename;
-        if(File.Exists(path))
+        try
         {
             File.Delete(path);
+            Console.WriteLine("File deleted successfully!");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error deleting file: " + ex.Message);
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace BB103_Pronia.Areas.Manage.ViewModels.Product
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BB103_Pronia.Areas.Manage.ViewModels.Product
 {
     public class UpdateProduct
     {
@@ -7,7 +9,8 @@
         public string Description { get; set; }
         public double Price { get; set; }
         public string? SKU { get; set; }
-        public int CategoryId { get; set; }
+        [Required]
+        public int? CategoryId { get; set; }
         public List<int> TagIds { get; set; }
         public IFormFile? MainPhoto { get; set; }
         public IFormFile? HoverPhoto { get; set; }

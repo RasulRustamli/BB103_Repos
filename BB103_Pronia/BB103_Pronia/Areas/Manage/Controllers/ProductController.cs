@@ -1,9 +1,11 @@
 ﻿
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BB103_Pronia.Areas.Manage.Controllers
 {
     [Area("manage")]
+    [Authorize(Roles ="Admin")]
     public class ProductController : Controller
     {
         AppDbContext _context;
@@ -14,11 +16,11 @@ namespace BB103_Pronia.Areas.Manage.Controllers
             _context = context;
             _env = env;
         }
-
+        
         public async Task<IActionResult> Index()
         {
             
-            return View(await _context.Products.Include(p=>p.Category).Include(p=>p.ProductTags).ThenInclude(p=>p.Tag).Include(p=>p.ProductImages).ToListAsync());
+            return View(await _context.Products.Where(p=>p.IsDeleted==false).Include(p=>p.Category).Include(p=>p.ProductTags).ThenInclude(p=>p.Tag).Include(p=>p.ProductImages).ToListAsync());
         }
         public async Task<IActionResult> Create()
         {
@@ -335,17 +337,18 @@ namespace BB103_Pronia.Areas.Manage.Controllers
 
         public IActionResult Delete(int id)
         {
-            Product product =_context.Products.Include(p=>p.ProductImages).FirstOrDefault(p => p.Id == id);
-            if(product == null) return View("Error");
+            
+            Product product =_context.Products.Include(p=>p.ProductImages).FirstOrDefault(p => p.Id==id);
+            if(product == null) return NotFound();
 
             foreach(var item in product.ProductImages)
             {
                 item.ImgUrl.RemoveFile(_env.WebRootPath, @"\Upload\Product\");
             }
 
-            _context.Products.Remove(product);
+            product.IsDeleted = true;
             _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            return Ok();
         }
     }
 }

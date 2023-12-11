@@ -49,44 +49,7 @@ namespace BB103_Pronia.Controllers
         }
 
 
-        public IActionResult AddBasket(int id)
-        {
-            var product = _context.Products.FirstOrDefault(p=>p.Id==id);
-            if (product == null) return NotFound();
-            List<BasketCookieVm> basket;
-            if(Request.Cookies["Basket"]==null)
-            {
-                BasketCookieVm basketCookieVm = new BasketCookieVm()
-                {
-                    Id = id,
-                    Count = 1
-                };
-                basket = new List<BasketCookieVm>();
-                basket.Add(basketCookieVm);
-            }
-            else
-            {
-                basket = JsonConvert.DeserializeObject<List<BasketCookieVm>>(Request.Cookies["Basket"]);
-                var existBasket = basket.FirstOrDefault(p => p.Id == id);
-                if(existBasket!=null)
-                {
-                    existBasket.Count+=1;
-                }
-                else
-                {
-                    BasketCookieVm basketCookieVm = new BasketCookieVm()
-                    {
-                        Id = id,
-                        Count = 1
-                    };
-                    basket.Add(basketCookieVm);
-                }
-            }
-            var json=JsonConvert.SerializeObject(basket);
-            Response.Cookies.Append("Basket",json);
-
-            return RedirectToAction(nameof(Index), "Home");
-        }
+        
         public IActionResult GetBasket()
         {
             var cookie = Request.Cookies["Basket"];
