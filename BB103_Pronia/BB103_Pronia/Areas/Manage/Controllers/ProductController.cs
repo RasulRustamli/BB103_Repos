@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BB103_Pronia.Areas.Manage.Controllers
 {
     [Area("manage")]
-    [Authorize(Roles ="Admin")]
+    [Authorize(Roles= "Admin")]
     public class ProductController : Controller
     {
         AppDbContext _context;
@@ -17,10 +17,21 @@ namespace BB103_Pronia.Areas.Manage.Controllers
             _env = env;
         }
         
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page=1)
         {
-            
-            return View(await _context.Products.Where(p=>p.IsDeleted==false).Include(p=>p.Category).Include(p=>p.ProductTags).ThenInclude(p=>p.Tag).Include(p=>p.ProductImages).ToListAsync());
+            int take = 3;
+
+            List<Product> products = await _context.Products.Skip((page-1)*take).Take(take)
+                .Where(p => p.IsDeleted == false)
+                .Include(p => p.Category)
+                .Include(p => p.ProductTags)
+                .ThenInclude(p => p.Tag)
+                .Include(p => p.ProductImages).ToListAsync();
+            List<Product> productsList=_context.Products.Where(p => p.IsDeleted == false).ToList();
+          
+            ViewBag.TotalPage =(int)Math.Ceiling((double) productsList.Count/take);
+            ViewBag.CurrentPage=page;
+            return View(products);
         }
         public async Task<IActionResult> Create()
         {

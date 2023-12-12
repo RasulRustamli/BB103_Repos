@@ -1,6 +1,6 @@
 ﻿@model List<Product>
 @{
-    int count = 0;
+    int count = (ViewBag.CurrentPage-1)*3;
 }
 
 
@@ -59,3 +59,14 @@
         </tbody>
     </table>
 </div>
+<nav aria-label="...">
+    <ul class="pagination pagination-lg">
+      @for (int i = 1; i <= ViewBag.TotalPage; i++)
+        {
+            <li class="page-item @(ViewBag.CurrentPage==i?"active":"" )" aria-current="page" >
+                <a class="page-link" asp-action="Index" asp-controller="Product" asp-route-page=@i>@i</a>
+            </li>
+        }
+
+    </ul>
+</nav>

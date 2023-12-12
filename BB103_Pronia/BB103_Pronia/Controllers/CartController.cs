@@ -187,7 +187,9 @@ namespace BB103_Pronia.Controllers
                 Address = orderVm.Address,
                 AppUser = user,
                 CreateDate = DateTime.Now,
-                TotalPrice = TotalPrice
+                TotalPrice = TotalPrice,
+                Code=CreateRandomCode.GenerateCode(5)
+                
             };
 
             await _context.Orders.AddAsync(order);

@@ -11,5 +11,6 @@ namespace BB103_Pronia.Models
         public string Address { get; set; }
         public DateTime CreateDate { get; set; }
         public double TotalPrice { get; set; }
+        public string Code { get; set; }
     }
 }

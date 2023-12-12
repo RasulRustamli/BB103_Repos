@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BB103_Pronia.Controllers
@@ -9,12 +10,14 @@ namespace BB103_Pronia.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        AppDbContext _context;
 
-        public AccountController(UserManager<AppUser> userManager,SignInManager<AppUser> signInManager,RoleManager<IdentityRole> roleManager)
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager, AppDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
+            _context = context;
         }
         public IActionResult Register()
         {
@@ -111,6 +114,26 @@ namespace BB103_Pronia.Controllers
             }
 
             return RedirectToAction(nameof(Index), "home");
+        }
+        [Authorize]
+        public async Task<IActionResult> MyAccount()
+        {
+
+            AppUser user=await _userManager.FindByNameAsync(User.Identity.Name);
+            if(user == null)
+            {
+                return RedirectToAction(nameof(Index), "Home");
+            }
+            List<Order> userOrders= await _context.Orders.Where(o=>o.AppUserId==user.Id).Include(o=>o.BasketItems).ToListAsync();
+            MyAccountVm accountVm = new MyAccountVm()
+            {
+                Orders = userOrders
+            };
+
+
+
+
+            return View(accountVm);
         }
     }
 }
